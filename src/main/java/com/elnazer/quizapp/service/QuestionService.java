@@ -12,9 +12,8 @@ import java.util.List;
 public class QuestionService {
     @Autowired
     QuestionDao questionDao;
-    public List<Question> getAllQuestions(){
-
-        return questionDao.findAll();
+    public ResponseEntity<List<Question>> getAllQuestions(){
+        return new ResponseEntity<>(questionDao.findAll(), HttpStatus.OK);
     }
     public List<Question> getQuestionsByCategory(String category){
         return questionDao.findByCategory(category);
