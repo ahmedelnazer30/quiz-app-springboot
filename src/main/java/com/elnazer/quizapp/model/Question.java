@@ -1,4 +1,4 @@
-package com.elnazer.quizapp;
+package com.elnazer.quizapp.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
